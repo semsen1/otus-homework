@@ -1,4 +1,16 @@
 services:
+#    php-fpm:
+#      image: jkaninda/laravel-php-fpm:8.2
+#      container_name: php-fpm-p
+#      restart: unless-stopped
+#      build:
+#        context: .
+#        dockerfile: Dockerfile
+#      volumes:
+#        - .:/var/www/html
+#        - ./php.ini:/usr/local/etc/php/conf.d/php.ini
+#      networks:
+#        - default-p
   php-fpm:
     container_name: php-fpm
     build:
