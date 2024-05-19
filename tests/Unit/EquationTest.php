@@ -44,12 +44,13 @@ class EquationTest extends TestCase
         $this->resolver->solve(0,2,1);
     }
 
+    //coefficient a equals string
     public function test_coefficients_type()
     {
         $this->expectException(\TypeError::class);
         $this->resolver->solve('a',2,1);
     }
-
+    //coefficient a equals string not converts to double
     public function test_coefficients_strict_types()
     {
         $this->expectException(\TypeError::class);

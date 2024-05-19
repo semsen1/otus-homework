@@ -10,6 +10,7 @@ class SolveQuadraticEquation
      */
     public function solve(float $a, float $b, float $c): array|false
     {
+        // PHP_FLOAT_EPSILON = 2.2204460492503E-16
         if ($a < PHP_FLOAT_EPSILON && $a > -PHP_FLOAT_EPSILON) {
             throw new \Exception('Coefficient a cannot be zero');
         }
